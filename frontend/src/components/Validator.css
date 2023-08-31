@@ -1,0 +1,213 @@
+.content{
+    display: flex;
+    flex-direction: column;
+   margin-top: 1vh;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .dropzone {
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    border: 3px dashed #eeeeee;
+    background-color: #fafafa;
+    color: #bdbdbd;
+    align-items: center;
+  
+    margin-bottom: 20px;
+    box-shadow:0px 5px 5px  rgb(147, 145, 145,0.6);
+  }
+  
+  .IconUpload{
+    width: 30%;
+    height: 50%;
+    background-size: cover;
+    background-image: url(./Icons/cloud.png);
+   position: relative;
+   left: 37%;
+   top: 5%;
+  }
+  .btn-validate{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    left: 30px;
+   
+    color: #00040a;
+    height: 40px;
+	border-radius: 50px;
+	background-image: linear-gradient(to right,
+			rgba(146, 215, 250, 0.76),
+			rgba(0, 170, 255, 0.803));
+	font-size: 22px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  button .disabled{
+    background-color: #b7bdbd;
+    cursor: not-allowed;
+  }
+  
+  .dropzone p{
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .montant input{
+    border-color: #b9bebe;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .dropzone input[type="file"] {
+    position: relative;
+    top: -250px;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .scrollable-div {
+    width: 900px; 
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    box-shadow:0px 5px 5px  rgb(147, 145, 145,0.6);
+    margin-bottom: 20px;
+  }
+  
+  .alertWarning{
+    background-color: #e34a38;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    
+  }
+  .alertWarning p{
+    position: relative;
+    left:410px;
+    bottom: 25px;
+    padding-top:-20px;
+    text-decoration: solid;
+  }
+  
+  .alertWarning span{
+    position:relative;
+    left: 20px;
+  }
+  
+  .popUp{
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7); 
+  }
+  .PopUp-container{
+    position: relative;
+    background-color: #fafafa;
+    text-align: center;
+    width: 20%;
+    border-radius: 12px;
+    padding: 10px 10px 30px 10px;
+    left: 40%;
+    top: 50vh;
+  }
+  .PopUp-container button{
+    border-radius: 5px;
+    border-color: #fff;
+    padding:8px 15px 8px 15px;
+  }
+  
+  .PopUp-container p{
+    text-decoration: solid;
+    color: #e34a38;
+  }
+  
+  
+  
+  .PopUp-container img{
+    width: 30%;
+    height:auto;
+    background-size: cover;
+    position: absolute;
+    left:5%;
+    bottom: 120px;
+  }
+  /* //////////////////////////////////////////////////////////////////////////// */
+  
+  .alert-simple.alert-danger
+  {
+  border: 1px solid rgba(241, 6, 6, 0.81);
+    background-color: rgba(220, 17, 1, 0.16);
+    box-shadow: 0px 0px 2px #ff0303;
+    color: #ff0303;
+    text-shadow: 1px 1px #00040a;
+  transition:0.5s;
+  cursor:pointer;
+  border-radius: 6px;
+  text-align: center;
+  height: 30px;
+  }
+  
+  .alert-danger:hover
+  {
+     background-color: rgba(220, 17, 1, 0.33);
+  transition:0.5s;
+  }
+  .alert1{
+    margin-top: 5px;
+    width: 98%;
+    padding-top: 3px;
+    padding-left: 6px;
+    
+  }
+   
+  .alert-danger1:hover
+  {
+     background-color: rgba(173, 220, 1, 0.33);
+  transition:0.5s;
+  }
+  .alert-simple1.alert-danger1
+  {
+  border: 1px solid rgba(81, 248, 109, 0.81);
+    background-color: rgba(1, 220, 154, 0.16);
+    box-shadow: 0px 0px 2px rgba(81, 248, 109, 0.81);;
+    color: rgba(81, 248, 109, 0.81);;
+    text-shadow: 1px 1px #00040a;
+  transition:0.5s;
+  cursor:pointer;
+  border-radius: 6px;
+  text-align: center;
+  height: 30px;
+  } 
+  .felssa{
+    position: absolute;
+    margin-top: 10px;
+    right:10vh;
+    height: 40px;
+	width: 150px;
+	border-radius: 50px;
+	background-image: linear-gradient(to right,
+			rgba(146, 215, 250, 0.76),
+			rgba(0, 170, 255, 0.803));
+	font-size: 22px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  

@@ -1,0 +1,41 @@
+---
+openapi: 3.0.0
+info:
+  description: <h3> Description du web service Sepa Validator </h3>
+  version: 1.0.0
+  title: Sepa Validator
+  license:
+    name: Neopolis-development
+    url: https://neopolis-dev.com/
+tags:
+  - name: Validator
+paths:
+  "/sepa_checker/validate":
+    post:
+      tags:
+        - Validator
+      summary: Sepa validator
+      description: >
+        <h3> -Ce web service permet de valider un fichier sepa.</h3>
+      requestBody:
+        description: ""
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                montant:
+                  type: string
+                  description: "Montant plus que"
+                  example: 10
+                xmlFile:
+                  description: "fichier"
+                  type: file
+      responses:
+        "200":
+          description: OK ou Message d'alerte d'incohérence de données .
+        "400":
+          description: Bad Request .
+        "500":
+          description: Erreur interne du serveur.
